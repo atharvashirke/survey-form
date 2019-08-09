@@ -39,6 +39,7 @@ body{
   font-family: arial;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 form{
@@ -70,7 +71,7 @@ label{
   grid-row-gap: 10px;
 }
 
-#reason{
+#dropdown{
   width: 20vw;
 }
 
