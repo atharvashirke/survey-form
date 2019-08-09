@@ -1,0 +1,90 @@
+#nav-ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-li{
+  float: right;
+}
+
+.nav-a{
+  display: block;
+  padding: 8px;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-a:hover{
+  background-color: #D8D8D8;
+}
+
+/* Must add active tag to individual link on each html page for functionality. */
+.active {
+  background-color: #819FF7;
+}
+
+nav{
+  background-color: #F2F2F2;
+}
+
+#survey-title{
+  text-align: center;
+}
+
+body{
+  margin: 0;
+  font-family: arial;
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+}
+
+.form-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, auto);
+  grid-gap: 20px 20px;
+  margin: 20px;
+}
+
+label{
+  justify-self: end;
+  text-align: right;
+}
+
+.answers{
+  justify-self: start;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.options{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-self: start;
+  grid-row-gap: 10px;
+}
+
+#reason{
+  width: 20vw;
+}
+
+.question{
+  text-align: right;
+}
+
+p{
+  text-align: center;
+}
+
+main{
+}
+
+#button{
+  text-align: center;
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Clinova Intern Management Form</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav>
+      <ul id="nav-ul">
+        <li class="nav-li"><a class="nav-a" href="#">Contact</a></li>
+        <li class="nav-li"><a class="nav-a active" href="#">Home</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 id="survey-title"> Intern Time-Off Management Form </h1>
+      <p> A form to track intern vacations, sick days, and earned time off. </p>
+      <form>
+        <div class="form-container">
+          <label for="name"> Name </label>
+          <input id="name" class="answers" type="text" placeholder="Name" name= "Name" required>
+          <label for="email"> Email </label>
+          <input id="email" class="answers" type="email" placeholder="Email" name="Email" required>
+          <label for="reason"> Reason for time off? </label>
+          <select name="Reason" id="reason">
+            <option value="vacation">Vacation Day(s)</option>
+            <option value="hours-off">Earned Hours Off</option>
+            <option value="sick">Sick leave</option>
+          </select>
+          <label for="hours-off"> If using earned hours off, how many hours are you using? </label>
+          <input id="hours-off" class="answers" type="number" min="0" max="9" placeholder="0">
+          <label for="date">If taking vacation day(s) off, which day(s)?</label>
+          <input id="date" class="answers" type="date">
+          <label for="radio"> If sick, can you work from home? </label>
+          <div class="options" id="radio">
+            <label for='yes'>
+              <input type="radio" class="answers" id="yes" name="wfh"> Yes, I can work from home.
+            </label>
+            <label for="no">
+              <input type="radio" class="answers" id="no" name="wfh"> No, I can't work from home.
+            </label>
+          </div>
+          <label for="terms"> Please check the following before submitting </label>
+          <div class="options" id="terms">
+            <label for='agreement_accepted' class="answers">
+              <input type="checkbox" class="answers" id="agreement_accepted" name="agreement_accepted"> My absence is in accordance with Clinova's code of conduct.
+            </label>
+            <label for='regular_updates' class="answers">
+              <input type='checkbox' class="answers" id="regularupdates" name="regular_updates"> I will provide regular updates to HR regarding any changes to my absences.
+            </label>
+          </div>
+          <label for="comments">Additional Comments</label>
+          <textarea rows="4" cols="50" id="comments" name="comments">Anything you'd like to say...</textarea>
+        </div>
+        <div id="button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
